@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CareerCloud.Pocos" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfApplicantEducationPoco">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ApplicantEducationPoco" nillable="true" type="tns:ApplicantEducationPoco" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfApplicantEducationPoco" nillable="true" type="tns:ArrayOfApplicantEducationPoco" />
+  <xs:complexType name="ApplicantEducationPoco">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Applicant" type="ser:guid" />
+      <xs:element minOccurs="0" name="CertificateDiploma" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompletionDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CompletionPercent" nillable="true" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Major" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ApplicantEducationPoco" nillable="true" type="tns:ApplicantEducationPoco" />
+  <xs:complexType name="ArrayOfApplicantJobApplicationPoco">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ApplicantJobApplicationPoco" nillable="true" type="tns:ApplicantJobApplicationPoco" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfApplicantJobApplicationPoco" nillable="true" type="tns:ArrayOfApplicantJobApplicationPoco" />
+  <xs:complexType name="ApplicantJobApplicationPoco">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Applicant" type="ser:guid" />
+      <xs:element minOccurs="0" name="ApplicationDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Job" type="ser:guid" />
+      <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ApplicantJobApplicationPoco" nillable="true" type="tns:ApplicantJobApplicationPoco" />
+  <xs:complexType name="ArrayOfApplicantProfilePoco">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ApplicantProfilePoco" nillable="true" type="tns:ApplicantProfilePoco" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfApplicantProfilePoco" nillable="true" type="tns:ArrayOfApplicantProfilePoco" />
+  <xs:complexType name="ApplicantProfilePoco">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Currency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CurrentRate" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CurrentSalary" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Login" type="ser:guid" />
+      <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Province" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Street" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ApplicantProfilePoco" nillable="true" type="tns:ApplicantProfilePoco" />
+  <xs:complexType name="ArrayOfApplicantResumePoco">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ApplicantResumePoco" nillable="true" type="tns:ApplicantResumePoco" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfApplicantResumePoco" nillable="true" type="tns:ArrayOfApplicantResumePoco" />
+  <xs:complexType name="ApplicantResumePoco">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Applicant" type="ser:guid" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="LastUpdated" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Resume" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ApplicantResumePoco" nillable="true" type="tns:ApplicantResumePoco" />
+  <xs:complexType name="ArrayOfApplicantSkillPoco">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ApplicantSkillPoco" nillable="true" type="tns:ApplicantSkillPoco" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfApplicantSkillPoco" nillable="true" type="tns:ArrayOfApplicantSkillPoco" />
+  <xs:complexType name="ApplicantSkillPoco">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Applicant" type="ser:guid" />
+      <xs:element minOccurs="0" name="EndMonth" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="EndYear" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Skill" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SkillLevel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartMonth" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="StartYear" type="xs:int" />
+      <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ApplicantSkillPoco" nillable="true" type="tns:ApplicantSkillPoco" />
+  <xs:complexType name="ArrayOfApplicantWorkHistoryPoco">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ApplicantWorkHistoryPoco" nillable="true" type="tns:ApplicantWorkHistoryPoco" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfApplicantWorkHistoryPoco" nillable="true" type="tns:ArrayOfApplicantWorkHistoryPoco" />
+  <xs:complexType name="ApplicantWorkHistoryPoco">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Applicant" type="ser:guid" />
+      <xs:element minOccurs="0" name="CompanyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EndMonth" type="xs:short" />
+      <xs:element minOccurs="0" name="EndYear" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="JobDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JobTitle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Location" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartMonth" type="xs:short" />
+      <xs:element minOccurs="0" name="StartYear" type="xs:int" />
+      <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ApplicantWorkHistoryPoco" nillable="true" type="tns:ApplicantWorkHistoryPoco" />
+</xs:schema>
